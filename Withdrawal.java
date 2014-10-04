@@ -13,6 +13,9 @@ public class Withdrawal {
 		if(BankMain.totalBalance-takenAmt < 0 ) {
 			System.out.println("Dude you have Insufficient Amount, do you want to Bankrupt us?");
 		}
+		else if (takenAmt<0) {
+			System.out.println("Dude why would you do that?");
+		}
 		else
 		{
 		BankMain.totalBalance=BankMain.totalBalance-takenAmt;
